@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
+}

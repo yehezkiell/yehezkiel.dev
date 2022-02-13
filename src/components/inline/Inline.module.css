@@ -1,0 +1,10 @@
+.span-container {
+  background-color: hsl(225, 11%, 93%);
+  padding: 0.2rem;
+  border-radius: 3px;
+  font-family: SFMono-Medium, "SF Mono", "Segoe UI Mono", "Roboto Mono",
+    "Ubuntu Mono", Menlo, Consolas, Courier, monospace;
+  font-size: 14px;
+  line-height: 24px;
+  color: #172b4d;
+}

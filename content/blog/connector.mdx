@@ -1,0 +1,74 @@
+---
+title: "Tokopedia Android App Journey to Support Dark Mode"
+date: "2021-07-24"
+description: "Android 10 has included the Dark Theme to its devices a while ago, and its adopters are rising quickly over time."
+hero_image: "../assets/connector.jpg"
+---
+
+import Inline from "$components/inline/Inline";
+
+_Android 10_ has included the **Dark Theme** to its devices a while ago, and its adopters are rising quickly over time. There are many benefits of Dark Mode such as reduced battery usage, improved visibility, reduce eye strain, and many more.
+This article will share and explain Tokopedia team's journey to convert our Android App to support Dark Mode. It will be bundled with some technical implementation as well.
+
+1. Petting dogs
+2. Singing
+3. Eating potato-based foods
+
+- This is the first list item.
+- Here's the second list item.
+
+  I need to add another paragraph below the second list item.
+
+- And here's the third list item.
+
+1.  Open the file.
+2.  Find the following code block on line 21:
+
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
+
+3.  Update the title to match the name of your website.
+
+**Description**
+
+---
+
+[link](https://www.example.com/my%20great%20page) asdasds
+
+<a href="https://www.example.com/my great page">link</a>
+
+PDP Page has several restriction cases that will block the Button. It will show the particular view on top of the button to prevent users click the button. Each restriction have different purposes but still we got the data from a struct in P2Data.
+
+> Text that is a quote
+
+<Inline>asd</Inline>
+
+```xml
+<com.tokopedia.sortfilter.SortFilter
+        app:sort_filter_relationship="[AND|OR]"
+        app:sort_filter_type="[quick|advanced]" />
+```
+
+```xml
+<resources>
+   <color name="product_detail_dms_page_control">@color/Unify_N700</color>
+</resources>
+```
+
+![asd](../assets/connector.jpg)
+
+- Do not create theasdasd
+
+  `java>- <color name="product_detail_dms_tradein_blue">#32afff</color>`
+
+- If using CardView, use app:cardBackgroundColor instead of android:background to apply dark mode color.
+- Use a static color that doesn't have any night valuesto the color you don't want to change in dark mode.
+- While creating the script, also check strings.xml value because there is a possibility developer store color resources there.
+- Don't change color in .xml that contains vector, it will produce a crash in lower os.
+- If you have to create a custom color, use a specific name that will be ignored in your script. So whenever the script is re-run, your color will not be converted. For example :
+
+If your app contains webview, we also need to support it to dark mode. First thing first, the web itself should support dark mode. Then to tell the web whether we need to use dark mode or not is the app needs to send some additional flag to webview from header. Google also has approach for this check here.
+
+Thats pretty much all of how we convert our app to dark mode. The automation really help us a lot and reducing human error. But we still have to do continuously improvement to our dark mode experience because there are some of the cases that need to be manually convert and not being catered in the script.
