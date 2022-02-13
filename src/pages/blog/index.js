@@ -5,9 +5,6 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 
 function BlogPage({ data }) {
-  const height = (width * 16) / 9;
-  const width = 300;
-
   return (
     <Layout pageTitle="My Blog Posts">
       <Seo title="All Posts" />
