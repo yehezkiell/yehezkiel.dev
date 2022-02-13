@@ -34,7 +34,6 @@
     "gatsby-plugin-sharp": "^4.5.2",
     "gatsby-plugin-sitemap": "^5.5.0",
     "gatsby-plugin-styled-components": "^5.5.0",
-    "gatsby-plugin-typography": "^4.5.0",
     "gatsby-remark-images": "^6.6.0",
     "gatsby-remark-prismjs": "^6.6.0",
     "gatsby-remark-vscode": "^3.3.1",
@@ -43,11 +42,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-typography": "^0.16.20",
-    "remark-emoji": "^3.0.2",
-    "remark-hint": "^1.0.10",
-    "styled-components": "^5.3.3",
-    "typography": "^0.16.21"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",

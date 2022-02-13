@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Yehezkiel Website`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://yehezkiel-dev.netlify.app/`,
     description: `This is my personal website to share blog regarding android and any other tech stuff articles`,
     author: `yehezkiel`,
     keywords: `yehezkiel, google, android, tech, tutorial, yehezkieldev`,
