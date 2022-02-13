@@ -5,7 +5,7 @@ module.exports = {
     description: `This is my personal website to share blog regarding android and any other tech stuff articles`,
     author: `yehezkiel`,
     keywords: `yehezkiel, google, android, tech, tutorial, yehezkieldev`,
-    image: `./src/images/profile.jpeg`,
+    image: `./src/images/profile.webp`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -50,7 +50,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/assets/`,
       },
       __key: "images",
     },

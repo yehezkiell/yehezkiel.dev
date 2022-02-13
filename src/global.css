@@ -3,18 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  * {
-    @apply scroll-smooth;
-  }
-  h1 {
-    @apply text-xl font-extrabold;
-  }
-  h2 {
-    @apply text-xl;
-  }
-}
-
 @layer components {
   .blog-container {
     @apply mx-auto p-4 w-screen max-w-full lg:w-3/5 text-left text-base pb-32;

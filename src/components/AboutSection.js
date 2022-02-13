@@ -18,7 +18,6 @@ function AboutSection({ className = "" }) {
           placeholder="blurred"
           alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
           src="../../assets/avatar-yehez.png"
-          quality={100}
         />
       </div>
 
