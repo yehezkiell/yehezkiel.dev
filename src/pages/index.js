@@ -22,10 +22,9 @@ function HeroSection() {
 }
 
 function LatestBlog({ blogs }) {
-  console.log("hehe " + blogs);
   return (
     <div className="bg-neutral-100 w-screen m-auto pb-32 pt-20 font-body">
-      <h3 className="w-1/2 mx-auto text-left">LATEST POST</h3>
+      <h3 className="w-1/2 mx-auto text-center md:text-left">LATEST POST</h3>
 
       {blogs.map((node) => (
         <div className="w-full text-center mx-auto md:text-left md:w-1/2">
