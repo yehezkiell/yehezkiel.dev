@@ -23,16 +23,32 @@ function AboutSection({ className = "" }) {
 
       <div className="mt-8 flex justify-center gap-3">
         <a href="https://www.linkedin.com/in/yehezkiell/" target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            size="2x"
+            className="hover:scale-105"
+          />
         </a>
         <a href="https://medium.com/@yehezkiell" target="_blank">
-          <FontAwesomeIcon icon={faMedium} size="2x" />
+          <FontAwesomeIcon
+            icon={faMedium}
+            size="2x"
+            className="hover:scale-105"
+          />
         </a>
         <a href="https://github.com/yehezkiell" target="_blank">
-          <FontAwesomeIcon icon={faGithubSquare} size="2x" />
+          <FontAwesomeIcon
+            icon={faGithubSquare}
+            size="2x"
+            className="hover:scale-105"
+          />
         </a>
         <a href="https://twitter.com/yehezkiel_l" target="_blank">
-          <FontAwesomeIcon icon={faTwitterSquare} size="2x" />
+          <FontAwesomeIcon
+            icon={faTwitterSquare}
+            size="2x"
+            className="hover:scale-105"
+          />
         </a>
       </div>
 

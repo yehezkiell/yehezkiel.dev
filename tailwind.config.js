@@ -4,6 +4,21 @@ module.exports = {
     fontFamily: {
       body: ["Montserrat"],
     },
+    keyframes: {
+      "fade-in-down": {
+        "0%": {
+          opacity: "0",
+          transform: "translateY(-30px)",
+        },
+        "100%": {
+          opacity: "1",
+          transform: "translateY(5)",
+        },
+      },
+    },
+    animation: {
+      "fade-in-down": "fade-in-down 1s ease-out",
+    },
   },
   corePlugins: {
     container: false,

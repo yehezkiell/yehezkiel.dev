@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Yehezkiel Website`,
+    title: `Yehezkiel Blog`,
     siteUrl: `https://yehezkiel-dev.netlify.app/`,
     description: `This is my personal website to share blog regarding android and any other tech stuff articles`,
     author: `yehezkiel`,
@@ -77,6 +77,18 @@ module.exports = {
         path: `${__dirname}/content/blog`,
       },
       __key: "blog",
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Yehezkiel Blog",
+        short_name: "yehezkiel's blog",
+        start_url: "/",
+        background_color: "#f7f0eb",
+        theme_color: "#a2466c",
+        display: `minimal-ui`,
+        icon: "assets/v1.png",
+      },
     },
   ],
 };

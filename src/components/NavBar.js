@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <nav className="fixed top-0 p-3 w-screen max-w-full md:max-w-full bg-white/80 flex justify-between lg:justify-around items-center backdrop-blur-3xl z-10 font-body">
       <div className="flex items-center hover:scale-110 transition hover:duration-200">
-        <a href="#">
+        <a href="/#">
           <Icon className="h-full" />
         </a>
       </div>

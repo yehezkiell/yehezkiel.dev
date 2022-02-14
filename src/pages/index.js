@@ -9,10 +9,10 @@ import Seo from "../components/seo";
 function HeroSection() {
   return (
     <div className="text-center table h-4/5 w-full mt-20 font-body">
-      <div className="table-cell align-bottom">
-        <h1 className="text-5xl">Hi, I’m Yehezkiel!</h1>
+      <div className="table-cell align-bottom ">
+        <h1 className="text-5xl animate-fade-in-down">Hi, I’m Yehezkiel!</h1>
 
-        <p className="max-w-lg mt-5 inline-block uppercase font-light leading-5 tracking-widest text-gray-500">
+        <p className="max-w-lg mt-5 inline-block uppercase font-light leading-5 tracking-widest text-gray-500 animate-fade-in-down">
           Android Engineer <br></br>Based in Jakarta, Indonesia
         </p>
         <Wave />
