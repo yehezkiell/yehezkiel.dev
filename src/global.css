@@ -48,31 +48,15 @@
     margin-top: 0.8rem;
   }
 
-  .blog-container :not(pre) > code[class*="language-"] {
-    @apply text-ellipsis;
+  .blog-container :not(pre) > code {
+    @apply max-w-full break-all inline align-middle;
     background-color: hsl(225, 11%, 93%) !important;
-    padding: 0.2rem 0.3rem 0.2rem 0.3rem !important;
+    padding: 0.1rem 0.3rem !important;
     font-size: 14px !important;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem !important;
+
     font-family: SFMono-Medium, "SF Mono", "Segoe UI Mono", "Roboto Mono",
       "Ubuntu Mono", Menlo, Consolas, Courier, monospace !important;
     font-weight: normal !important;
-  }
-
-  .blog-container code[class*="language-"],
-  pre[class*="language-"] {
-    @apply text-lg;
-    font-family: SFMono-Medium, "SF Mono", "Segoe UI Mono", "Roboto Mono",
-      "Ubuntu Mono", Menlo, Consolas, Courier, monospace !important;
-  }
-
-  /* Code Higlight */
-  .blog-container .gatsby-highlight-code-line {
-    background-color: #feb;
-    display: block;
-    margin-right: -1em;
-    margin-left: -1em;
-    padding-right: 1em;
-    padding-left: 0.75em;
-    border-left: 0.25em solid #f99;
   }
 }

@@ -14,7 +14,7 @@ function Announcement({ children, type, className }) {
         containerStyles.announcementContainer
       }
     >
-      <div className={containerStyles.announcementChild}>{children}</div>
+      <div>{children}</div>
     </div>
   );
 }

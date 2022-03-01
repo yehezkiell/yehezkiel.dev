@@ -7,8 +7,9 @@ hero_image: "../assets/connector.webp"
 
 import Inline from "$components/inline/Inline";
 
-_Android 10_ has included the **Dark Theme** to its devices a while ago, and its adopters are rising quickly over time. There are many benefits of Dark Mode such as reduced battery usage, improved visibility, reduce eye strain, and many more.
-This article will share and explain Tokopedia team's journey to convert our Android App to support Dark Mode. It will be bundled with some technical implementation as well.
+_Android 10_ has included the **Dark Theme** to its devices a while ago, and its adopters are rising quickly over time.`<color name="product_detail_dms_tradein_blue_asdasdasd">#32a sdasdsfff</color>`
+There are many benefits of Dark Mode such as reduced battery usage, improved visibility, reduce eye strain, and many more.
+This article will share and explain Tokopedia team's journey to convert our Android App to support Dark Mode. It will be bundled with some technical implementation as well. `asd`
 
 1. Petting dogs
 2. Singing
@@ -43,18 +44,45 @@ This article will share and explain Tokopedia team's journey to convert our Andr
 
 <Inline>asd</Inline>
 
+```java
+/**
+ * @author John Smith <john.smith@example.com>
+*/
+package l2f.gameserver.model;
+
+public abstract strictfp class L2Char extends L2Object {
+  public static final Short ERROR = 0x0001;
+
+  public void moveTo(int x, int y, int z) {
+    _ai = null;
+    log("Should not be called");
+    if (1 > 5) { // wtf!?
+      return;
+    }
+  }
+}
+```
+
+```java
+/**
+ * Created by Yehezkiel
+ */
+fun equals(other: Any?): Boolean {
+    return false
+}
+```
+
 ```xml
 <resources>
    <color name="product_detail_dms_page_control">@color/Unify_N700</color>
 </resources>
 ```
 
+`<Highlight/>`
+
 ![asd](../assets/connector.webp)
 
-- Do not create theasdasd
-
-  `java>- <color name="product_detail_dms_tradein_blue">#32afff</color>`
-
+- Do not create theasdasd `asd`
 - If using CardView, use app:cardBackgroundColor instead of android:background to apply dark mode color.
 - Use a static color that doesn't have any night valuesto the color you don't want to change in dark mode.
 - While creating the script, also check strings.xml value because there is a possibility developer store color resources there.
@@ -64,3 +92,29 @@ This article will share and explain Tokopedia team's journey to convert our Andr
 If your app contains webview, we also need to support it to dark mode. First thing first, the web itself should support dark mode. Then to tell the web whether we need to use dark mode or not is the app needs to send some additional flag to webview from header. Google also has approach for this check here.
 
 Thats pretty much all of how we convert our app to dark mode. The automation really help us a lot and reducing human error. But we still have to do continuously improvement to our dark mode experience because there are some of the cases that need to be manually convert and not being catered in the script.
+
+```kt highlights=5 file=ProductDetail.kt
+ /**
+ * Helper method for [.calculateDxToMakeVisible] and
+ * [.calculateDyToMakeVisible]
+ */
+fun calculateDtToFit(viewStart: Int, viewEnd: Int, boxStart: Int, boxEnd: Int, snapPreference: Int): Int {
+    when (snapPreference) {
+        LinearSmoothScroller.SNAP_TO_START -> return boxStart - viewStart
+        LinearSmoothScroller.SNAP_TO_END -> return boxEnd - viewEnd
+        LinearSmoothScroller.SNAP_TO_ANY -> {
+            val dtStart = boxStart - viewStart
+            if (dtStart > 0) {
+                return dtStart
+            }
+            val dtEnd = boxEnd - viewEnd
+            if (dtEnd < 0) {
+                return dtEnd
+            }
+        }
+        else -> throw IllegalArgumentException("snap preference should be one of the"
+                + " constants defined in SmoothScroller, starting with SNAP_")
+    }
+    return 0
+}
+```
