@@ -8,7 +8,7 @@ function Announcement({ children, type, className }) {
   return (
     <div
       className={
-        "w-full text-center mx-auto my-4 " +
+        "w-full  mx-auto my-4 " +
         className +
         " " +
         containerStyles.announcementContainer
