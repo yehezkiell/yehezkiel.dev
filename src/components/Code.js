@@ -26,6 +26,7 @@ const Code = (props) => {
   const highlights = calculateLinesToHighlight(
     props.children.props.highlights || ""
   );
+  const showLineNumbers = props.children.props.lineNumbers;
 
   return (
     <div
@@ -77,6 +78,18 @@ const Code = (props) => {
                     display: "block",
                   }}
                 >
+                  {showLineNumbers && (
+                    <span
+                      style={{
+                        textAlign: "right",
+                        paddingRight: "1em",
+                        userSelect: "none",
+                        opacity: 0.5,
+                      }}
+                    >
+                      {i + 1}
+                    </span>
+                  )}
                   {line.map((token, key) => (
                     <span key={key} {...getTokenProps({ token, key })} />
                   ))}
