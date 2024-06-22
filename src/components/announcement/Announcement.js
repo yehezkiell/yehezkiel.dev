@@ -1,5 +1,4 @@
 import * as React from "react";
-import * as containerStyles from "./Announcement.module.css";
 
 function Announcement({ children, type, className }) {
   console.log("type : " + type);
@@ -8,10 +7,7 @@ function Announcement({ children, type, className }) {
   return (
     <div
       className={
-        "w-full  mx-auto my-4 " +
-        className +
-        " " +
-        containerStyles.announcementContainer
+        "w-full  mx-auto my-4 announcement-container "
       }
     >
       <div>{children}</div>

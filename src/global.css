@@ -7,22 +7,48 @@
   * {
     @apply scroll-smooth;
   }
+
   h1 {
     @apply text-xl font-extrabold;
   }
+
   h2 {
     @apply text-xl;
   }
 }
 
 @layer components {
+  .span-container {
+    @apply bg-gray-500 dark:bg-gray-700;
+    padding: 0.2rem;
+    border-radius: 3px;
+    font-family: SFMono-Medium, "SF Mono", "Segoe UI Mono", "Roboto Mono",
+      "Ubuntu Mono", Menlo, Consolas, Courier, monospace;
+    font-size: 14px;
+    line-height: 24px;
+    color: #172b4d;
+  }
+
+  .primary-bg {
+    @apply bg-white dark:dark:bg-gray-900;
+  }
+
+  .announcement-container {
+    @apply bg-blue-300 dark:bg-slate-700;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+  }
+
+  .text-primary {
+    @apply text-black dark:text-white;
+  }
+
   .blog-container {
-    @apply mx-auto p-4 w-screen max-w-full lg:w-3/5 text-left text-base pb-32;
+    @apply mx-auto p-4 w-screen max-w-full lg:w-3/5 text-left text-base pb-32 text-black dark:text-white;
     position: relative;
 
     font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Noto Sans",
       Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
-    color: #172b4d;
 
     font-variant: normal;
     line-height: 30px;
@@ -48,9 +74,8 @@
     margin-top: 0.8rem;
   }
 
-  .blog-container :not(pre) > code {
-    @apply max-w-full break-all inline align-middle;
-    background-color: hsl(225, 11%, 93%) !important;
+  .blog-container :not(pre)>code {
+    @apply max-w-full break-all inline align-middle bg-gray-300 dark:bg-gray-600 text-primary;
     padding: 0.1rem 0.3rem !important;
     font-size: 14px !important;
     padding: 0.2rem 0.3rem 0.2rem 0.3rem !important;

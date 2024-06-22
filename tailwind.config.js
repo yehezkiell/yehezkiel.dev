@@ -1,6 +1,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: 'selector',
   theme: {
+    extend: {
+      colors: {
+        'light-blue': '#e6f2ff'
+      }
+    },
     fontFamily: {
       body: ["Montserrat"],
     },

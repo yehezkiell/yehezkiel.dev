@@ -15,7 +15,7 @@ export default function Template({ data }) {
         title={data.mdx.frontmatter.title}
         description={data.mdx.frontmatter.description}
       />
-      <div className="blog-container">
+      <div className="blog-container pt-20">
         <h1 className="pt-4">{data.mdx.frontmatter.title}</h1>
         <h4 className="pt-2 pb-5 text-base">
           Posted by on {data.mdx.frontmatter.date}

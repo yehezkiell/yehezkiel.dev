@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.16.7",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -24,6 +25,7 @@
     "@mdx-js/react": "^1.6.22",
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.5.4",
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
     "gatsby-plugin-image": "^2.5.2",
     "gatsby-plugin-manifest": "^4.7.0",
@@ -46,6 +48,7 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "ajv": "^7.2.4",
     "autoprefixer": "^10.4.2",
     "gatsby-plugin-postcss": "^5.6.0",
     "postcss": "^8.4.6",

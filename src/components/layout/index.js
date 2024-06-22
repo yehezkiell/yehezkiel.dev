@@ -9,7 +9,8 @@ function Layout(props) {
 
       <div className="container relative">
         <NavBar />
-        <div className="h-screen w-full mt-20">
+
+        <div className="h-fit w-full primary-bg">
           {props.children}
           <FooterSection />
         </div>

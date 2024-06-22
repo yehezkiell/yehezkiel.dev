@@ -8,10 +8,10 @@ function BlogPage({ data }) {
   return (
     <Layout pageTitle="My Blog Posts">
       <Seo title="All Posts" />
-      <div className="w-full mx-auto xl:w-7/12 lg:w-8/12 pt-10 pb-32">
+      <div className="w-full primary-bg mx-auto xl:w-7/12 lg:w-8/12 pt-32 pb-16 ">
         {data.allMdx.nodes.map((node) => (
           <Link to={node.slug}>
-            <div className="flex flex-col md:px-0 lg:flex-row justify-center items-center gap-6 mb-10 group lg:hover:scale-105 transition">
+            <div className="flex flex-col md:px-0 lg:flex-row justify-center items-center gap-12 mb-16 group lg:hover:scale-105 transition">
               <div className="px-2 md:p-4 lg:p-0">
                 <GatsbyImage
                   image={getImage(node.frontmatter.hero_image)}
@@ -20,14 +20,14 @@ function BlogPage({ data }) {
                 />
               </div>
 
-              <div className="bg-white w-screen text-center lg:text-left ">
-                <h1 className="text-3xl lg:group-hover:underline">
+              <div className="w-screen text-center lg:text-left">
+                <h1 className="text-3xl lg:group-hover:underline text-primary">
                   {node.frontmatter.title}
                 </h1>
-                <h2 className="font-extralight text-lg text-slate-500">
+                <h2 className="font-extralight text-lg text-gray-500 dark:text-gray-400">
                   Posted on: {node.frontmatter.date}
                 </h2>
-                <p className="mx-auto w-screen mt-4 md:w-3/4 lg:w-5/6 lg:mx-0">
+                <p className="mx-auto w-screen mt-4 md:w-3/4 lg:w-5/6 lg:mx-0 text-primary">
                   Posted: {node.frontmatter.description}
                 </p>
               </div>
