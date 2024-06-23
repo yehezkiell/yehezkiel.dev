@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const ThemeToggler = ({ children }) => {
     const [theme, setTheme] = useState(() => {
         // Get theme from localStorage, default to 'light'
-        return localStorage.getItem('theme') || 'light';
+        return typeof window !== 'undefined' ? localStorage.getItem('theme') : 'dark';
     });
 
     useEffect(() => {
@@ -13,7 +13,7 @@ const ThemeToggler = ({ children }) => {
         document.body.className = theme;
 
         // Save the theme to localStorage
-        localStorage.setItem('theme', theme);
+        return typeof window !== 'undefined' ? localStorage.setItem('theme', theme) : null;
     }, [theme]);
 
     const toggleTheme = (newTheme) => {
@@ -66,7 +66,7 @@ const ToggleDarkMode = () => (
                     {theme === 'dark' ? (
                         <MoonIcon />
                     ) : (
-                        <SunIcon className="hover:scale-105 stroke-black" />
+                        <SunIcon className="hover:scale-105 stroke-yellow-400 fill-yellow-400" />
                     )}
                 </span>
             </label>
