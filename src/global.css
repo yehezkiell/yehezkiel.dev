@@ -15,6 +15,13 @@
   h2 {
     @apply text-xl;
   }
+
+  body {
+    @apply bg-white dark:bg-slate-800;
+    height: 100%;
+    margin: 0;
+    padding: 01;
+  }
 }
 
 @layer components {
