@@ -14,7 +14,6 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-use-dark-mode",
     "gatsby-plugin-postcss",
     "gatsby-plugin-fontawesome-css",
     {
