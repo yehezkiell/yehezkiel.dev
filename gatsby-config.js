@@ -15,7 +15,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
-    "gatsby-plugin-dark-mode",
     "gatsby-plugin-fontawesome-css",
     {
       resolve: "gatsby-plugin-react-svg",
