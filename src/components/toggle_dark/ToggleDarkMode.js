@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const ThemeToggler = ({ children }) => {
     const [theme, setTheme] = useState(() => {
         // Get theme from localStorage, default to 'light'
-        return localStorage.getItem('theme') : 'dark';
+        return localStorage.getItem('theme');
     });
 
     useEffect(() => {
