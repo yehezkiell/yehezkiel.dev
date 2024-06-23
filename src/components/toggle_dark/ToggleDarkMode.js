@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const ThemeToggler = ({ children }) => {
     const [theme, setTheme] = useState(() => {
         // Get theme from localStorage, default to 'light'
-        return typeof window !== 'undefined' ? localStorage.getItem('theme') : 'dark';
+        return localStorage.getItem('theme') : 'dark';
     });
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const ThemeToggler = ({ children }) => {
         } else {
             document.documentElement.classList.remove('dark');
         }
-        return typeof window !== 'undefined' ? localStorage.setItem('theme', theme) : null;
+        return localStorage.setItem('theme', theme);
     }, [theme]);
 
     const toggleTheme = (newTheme) => {
