@@ -4,8 +4,10 @@ import { wrapRootElement as wrap } from "./src/components/wrap-root-element";
 const applyDarkModeClass = `
 (function() {
   try {
-    var mode = localStorage.getItem('theme');
-    document.getElementsByTagName("html")[0].className = mode === 'dark' ? 'dark' : 'light';
+     var mode = localStorage.getItem('theme');
+              if (mode === 'dark') {
+                document.documentElement.classList.add('dark');
+              }
     console.log("INJECTED")
   } catch (e) {
        console.log("INJECTED FAILED")

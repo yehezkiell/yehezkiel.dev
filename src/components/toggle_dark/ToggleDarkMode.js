@@ -10,9 +10,11 @@ const ThemeToggler = ({ children }) => {
 
     useEffect(() => {
         // Apply the theme to the document body
-        document.body.className = theme;
-
-        // Save the theme to localStorage
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
         return typeof window !== 'undefined' ? localStorage.setItem('theme', theme) : null;
     }, [theme]);
 
@@ -45,7 +47,7 @@ const MoonIcon = () => (
     <FontAwesomeIcon
         icon={faMoon}
         size="1x"
-        className="hover:scale-105 text-slate-800"
+        className="hover:scale-105 text-slate"
     />
 );
 
