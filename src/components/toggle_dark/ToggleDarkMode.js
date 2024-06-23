@@ -45,7 +45,7 @@ const MoonIcon = () => (
     <FontAwesomeIcon
         icon={faMoon}
         size="1x"
-        className="hover:scale-105 text-black dark:text-gray-500"
+        className="hover:scale-105 text-slate-800"
     />
 );
 
@@ -64,9 +64,9 @@ const ToggleDarkMode = () => (
                 />
                 <span>
                     {theme === 'dark' ? (
-                        <MoonIcon />
-                    ) : (
                         <SunIcon className="hover:scale-105 stroke-yellow-400 fill-yellow-400" />
+                    ) : (
+                        <MoonIcon />
                     )}
                 </span>
             </label>
