@@ -3,26 +3,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from 'react';
 
 const ThemeToggler = ({ children }) => {
-    const [theme, setTheme] = useState(() => {
-        // Get theme from localStorage, default to 'light'
-        return localStorage.getItem('theme');
-    });
+    const [theme, setTheme] = useState(null); // Initialize theme state to null
 
     useEffect(() => {
-        // Apply the theme to the document body
-        if (theme === 'dark') {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
+        // Only run this on the client side
+        if (typeof window !== 'undefined') {
+            const storedTheme = localStorage.getItem('theme') || 'light'; // Default to 'light' if no theme is stored
+            setTheme(storedTheme);
         }
-        return localStorage.setItem('theme', theme);
+    }, []);
+
+    useEffect(() => {
+        // Only run this if theme is not null and on the client side
+        if (theme && typeof window !== 'undefined') {
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            localStorage.setItem('theme', theme);
+        }
     }, [theme]);
 
     const toggleTheme = (newTheme) => {
         setTheme(newTheme);
     };
 
-    return children({ theme, toggleTheme });
+    return theme !== null ? children({ theme, toggleTheme }) : null;
 };
 
 const SunIcon = ({ className }) => (
